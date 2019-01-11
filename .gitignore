@@ -1,0 +1,6 @@
+*.swp
+
+venv
+__pycahce__
+
+*.pyc
