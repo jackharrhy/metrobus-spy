@@ -16,10 +16,10 @@ def get_busses():
 
     for tag in a_tags:
         url = tag['href']
-        parsedUrl = urlparse(url)
+        parsed_url = urlparse(url)
 
-        if parsedUrl.path == '/bus_locate.asp':
-            queryParams = parse_qs(parsedUrl.query)
+        if parsed_url.path == '/bus_locate.asp':
+            queryParams = parse_qs(parsed_url.query)
             data[queryParams['route'][0]] = {
                 'lat': queryParams['lat'][0],
                 'lon': queryParams['lon'][0],
