@@ -1,4 +1,4 @@
-FROM tiangolo/uwsgi-nginx-flask: python3.8-alpine-2020-08-16
+FROM tiangolo/uwsgi-nginx-flask:python3.8-alpine-2020-08-16
 
 WORKDIR /app
 
